@@ -9,6 +9,7 @@ kubectl delete pod nginx
 
 kubectl run nginx --image=nginx -n nginx
 kubectl get pods -n nginx
+kubectl exec -it nginx-pod -n nginx -- bash 
 
 kubectl delete pod nginx -n nginx
 kubectl delete ns nginx

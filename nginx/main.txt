@@ -1,0 +1,9 @@
+kubectl apply -f namespace.yml
+kubectl apply -f pod.yml
+kubectl get ns
+kubectl get pod -n nginx
+kubectl exec -it nginx-pod -n nginx -- bash
+kubectl delete pod nginx-pod -n nginx 
+curl 127.0.0.1
+
+kubectl describe pod/nginx-pod -n nginx
