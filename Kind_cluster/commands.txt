@@ -1,0 +1,4 @@
+chmod 777 install.sh
+./install.sh
+
+kind create cluster --config=Create_a_kind-config.yaml --name=zaid-kind-cluster
